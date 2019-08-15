@@ -1,0 +1,72 @@
+Setup 1: elu+Relu + 64 batch
+epoch	val 
+50		232
+100		373
+150		455
+200		509
+
+Setup 2: elu+Relu + 128 batch
+epoch	metric	metric2
+50		184		208
+100		260		268
+150		355		318
+200		397		381
+250		462		463
+300		501		531
+350		521		544
+400		551		521 -- test score: 554
+
+Setup 3: 2xRelu + 64 batch
+epoch	metric
+50		263
+100		369
+150		428
+200		499   -- test score: 481
+
+Setup 4: 2xRelu + 128 batch
+epoch	metric
+50		210
+100		275
+150		330
+200		stopped
+
+Setup 5: Relu+lu + 64 batch
+epoch	metric
+50		213
+100		stopped
+
+Setup 6: elu+lu + 64 batch
+epoch	metric
+50		212
+100		294
+150		stopped
+
+Setup 7: 2xElu + 64 batch
+epoch	metric
+50		213
+100		310
+150		stopped
+
+Setup 8: elu+relu + 100 batch
+epoch	metric
+50		211
+100		317
+150		410
+200		492
+250		547
+300		594	-- test score: 557
+350		584	-- test score: 566
+400		603	-- test score: 568
+
+Setup 8: elu+relu + 150 batch
+epoch	metric
+400		607	-- test score: 616
+450		610	-- test score: 605
+500		640	-- test score: 630
+550		655 -- test score: 596
+
+Setup 9: elu+relu + 200 batch
+epoch	metric
+500		606	
+550		615
+600		675	-- test score: 641
